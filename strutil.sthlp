@@ -5,67 +5,87 @@
 
 {marker strutil}{p 2 2 2}{title:strutil}{p_end}
 
-{p 4 4 4}{hi:strutil {hline 2}} Describe your program here. {p_end}
+{p 4 4 4}{hi:strutil {hline 2}} program that provides access to phonetic
+string encoding algorithms from the
+{browse "http://commons.apache.org/proper/commons-codec/":Apache Commons Codec Java Library}. {p_end}
 
 {marker syntax}{p 2 2 2}{title:Syntax}{p_end}
 
-{p 4 4 4}{cmd:strutil} [{varlist}] [{it:namelist}] [{it:anything}]
-[{it:using}] [{it:exp}] [{weight}] [{ifin}] [, {cmdab:opt:on} {cmd:optoff}
-{cmdab:int:opt(}{it:integer}{opt )} {cmdab:real:opt(}{it:real}{opt )}
-{cmdab:confidencei:nterval(}{it:real}{opt )} {cmdab:crediblei:nterval(}{it:real}{opt )}
-{cmdab:numlist:opt(}{it:optional info about parameter}{opt )}
-{cmdab:varlist:opt(}{it:optional info about parameter}{opt )}
-{cmdab:namelist:opt(}{it:optional info about parameter}{opt )}
-{cmdab:string:opt(}{it:string value}{opt )}
-{cmdab:passthru:opt(}{it:argument passed to other command}{opt )}]
+{p 4 4 4}{cmd:strutil} {varlist} {ifin} [,
+{cmd:caverphone1(}{it:varname}{opt )}
+{cmd:caverphone2(}{it:varname}{opt )}
+{cmdab:col:ogne(}{it:varname}{opt )}
+{cmdab:dms:oundex(}{it:varname}{opt )}
+{cmdab:dblm:etaphone(}{it:varname}{opt )}
+{cmdab:metap:hone(}{it:varname}{opt )}
+{cmdab:nys:iis(}{it:varname}{opt )}
+{cmdab:beiderm:orse(}{it:varname}{opt )}
+{cmdab:matchr:ating(}{it:varname}{opt )}]
+
+{p 4 4 8} the command can accept one or more variables to encode.  When a
+varlist is passed, the strings are concatenated with a space between the
+variable values.{p_end}
 
 
 {marker opts}{p 2 2 2}{title:Options}{p_end}
 
-{p 4 4 8}{cmdab:opt:on} what does this option turn on in the command {p_end}
-{p 4 4 8}{cmd:optoff} what does this option turn off in the command {p_end}
-{p 4 4 8}{cmdab:int:opt} what types of integer values are valid?  What
-do different values of the integer do to the performance of the command? {p_end}
-{p 4 4 8}{cmdab:real:opt} what real numbers are valid?  How do different
-values affect what the program does? {p_end}
-{p 4 4 8}{cmdab:confidencei:nterval} defines the confidence intervals to
-be returned from the command. {p_end}
-{p 4 4 8}{cmdab:crediblei:nterval} defines the credible intervals to be
-returned from this command. {p_end}
-{p 4 4 8}{cmdab:numlist:opt} What values are valid?  How many numbers can be
-passed?  How few numbers need to be passed?  What do these numbers do to the
-performance of the command? {p_end}
-{p 4 4 8}{cmdab:varlist:opt} What types of variables can be passed?  Are
-factor variable supported?  Are time series variables supported?  How
-many variables can be passed?  How few need to be passed?  How does this
-affect the performance of the command? {p_end}
-{p 4 4 8}{cmdab:namelist:opt} How many names can be passed?  Do the names
-need to refer to anything specific?  How few names need to be passed?  {p_end}
-{p 4 4 8}{cmdab:string:opt} Are there specific string values that are
-valid?  How is the string value used?  Are there any length limitations?{p_end}
-{p 4 4 8}{cmdab:passthru:opt} would be a good idea to use {help } to
-point this to the command to which this option is passed thru to.{p_end}
+{p 4 4 8}{cmd:caverphone1} used to define the variable where the
+Caverphone v. 1 encoded strings will be stored.  Passing an argument to the
+parameter triggers encoding the data with this algorithm.  See {browse "http://commons.apache.org/proper/commons-codec/apidocs/org/apache/commons/codec/language/Caverphone1.html"} for
+additional information. {p_end}
+
+{p 4 4 8}{cmd:caverphone2} used to define the variable where the
+Caverphone v. 2 encoded strings will be stored.  Passing an argument to the
+parameter triggers encoding the data with this algorithm.  See {browse "http://commons.apache.org/proper/commons-codec/apidocs/org/apache/commons/codec/language/Caverphone2.html"} for
+additional information. {p_end}
+
+{p 4 4 8}{cmdab:col:ogne} used to define the variable where the Cologne
+Phonetic encoded strings will be stored.  Passing an argument to the
+parameter triggers encoding the data with this algorithm.  See {browse "http://commons.apache.org/proper/commons-codec/apidocs/org/apache/commons/codec/language/ColognePhonetic.html"} for
+additional information. {p_end}
+
+{p 4 4 8}{cmdab:dms:oundex} used to define the variable where the Daitch
+Mokotoff Soundex encoded strings will be stored.  Passing an argument to the
+parameter triggers encoding the data with this algorithm.  See {browse "http://commons.apache.org/proper/commons-codec/apidocs/org/apache/commons/codec/language/DaitchMokotoffSoundex.html"} for
+additional information. {p_end}
+
+{p 4 4 8}{cmdab:dblm:etaphone} used to define the variable where the
+Double Metaphone encoded strings will be stored.  Passing an argument to the
+parameter triggers encoding the data with this algorithm.  See {browse "http://commons.apache.org/proper/commons-codec/apidocs/org/apache/commons/codec/language/DoubleMetaphone.html"} for
+additional information. {p_end}
+
+{p 4 4 8}{cmdab:metap:hone} used to define the variable where the
+Metaphone encoded strings will be stored.  Passing an argument to the
+parameter triggers encoding the data with this algorithm.  See {browse "http://commons.apache.org/proper/commons-codec/apidocs/org/apache/commons/codec/language/Metaphone.html"} for
+additional information. {p_end}
+
+{p 4 4 8}{cmdab:nys:iis} used to define the variable where the Nysiis encoded strings will be stored.  Passing an argument to the
+parameter triggers encoding the data with this algorithm.  See {browse "http://commons.apache.org/proper/commons-codec/apidocs/org/apache/commons/codec/language/Nysiis.html"} for
+additional information. {p_end}
+
+{p 4 4 8}{cmdab:beiderm:orse} used to define the variable where the
+Beider Morse encoded strings will be stored.  Passing an argument to the
+parameter triggers encoding the data with this algorithm.  See {browse "http://commons.apache.org/proper/commons-codec/apidocs/org/apache/commons/codec/language/bm/BeiderMorseEncoder.html"} for
+additional information. {p_end}
+
+{p 4 4 8}{cmdab:matchr:ating} used to define the variable where the Match
+Rating Approach encoded strings will be stored.  Passing an argument to the
+parameter triggers encoding the data with this algorithm.  See
+{browse "http://commons.apache.org/proper/commons-codec/apidocs/org/apache/commons/codec/language/MatchRatingApproachEncoder.html"} for
+additional information.{p_end}
 
 {marker examples}{p 2 2 2}{title:Examples}{p_end}
 
-{p 4 4 4}Text explaining the example that follows. {p_end}
+{p 4 4 4}Encoding car models/makes using all algorithms. {p_end}
 
-{p 8 8 12}{stata strutil:strutil}{p_end}
-
-{marker refs}{p 2 2 2}{title:References}{p_end}
-
-{p 2 2 2}Book{p_end}
-{phang}Last, F. M., & Last, F. M. (YYYY).  {it:Book Title}. City, State: Publisher.{p_end}
-
-{p 2 2 2}Article{p_end}
-{phang}Last, F. M., & Last, F. M. (YYYY). title. {it:Journal, Volume(Number),} pp # - #.{p_end}
+{p 8 8 12}{stata strutil make, caverphone1(cav1) caverphone2(cav2) col(kolner) dms(daitch) dblm(dblmeta) metap(metaphone) nys(nysiis) beiderm(bmencode) matchrating(mrating)}{p_end}
 
 {marker issues}{p 2 2 2}{title:Issues, Bugs, and Enhancement Requests}{p_end}
 
 {p 4 4 4}Please submit any issues, bugs, and future enhancement requests to
 the project respository: {p_end}
 
-{p 12 12 12}{browse https://github.com/wbuchanan/StataStringUtilities/issues}{p_end}
+{p 12 12 12}{browse "https://github.com/wbuchanan/StataStringUtilities/issues"}{p_end}
 
 {marker author}{p 2 2 2}{title:Author}{p_end}
 {p 4 4 4}William R Buchanan{p_end}
