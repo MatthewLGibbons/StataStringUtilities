@@ -2,6 +2,8 @@ package org.paces.Stata.StringUtils;
 
 import com.stata.sfi.SFIToolkit;
 import org.paces.Stata.MetaData.Meta;
+import org.paces.Stata.StringUtils.PhoneticEncoding.StringEncoders;
+import org.paces.Stata.StringUtils.Similarity.DistanceMetrics;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -39,6 +41,17 @@ public class StringUtilities {
 			SFIToolkit.errorln(SFIToolkit.stackTraceToString(e));
 			return 1;
 		}
+	}
+
+	/**
+	 * Method that implements string distance metrics
+	 * @param args Args passed from args parameter of Java Call.  Only
+	 *                optional Locale setting
+	 * @return A success indicator
+	 */
+	public static int distance(String[] args) {
+		new DistanceMetrics(args);
+		return 0;
 	}
 
 } // End of Class declaration

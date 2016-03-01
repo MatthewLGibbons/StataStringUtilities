@@ -1,4 +1,4 @@
-package org.paces.Stata.StringUtils;
+package org.paces.Stata.StringUtils.PhoneticEncoding;
 
 import com.stata.sfi.Data;
 import org.paces.Stata.MetaData.Meta;
