@@ -1,0 +1,5 @@
+*! TOC File
+v 3
+d Stata String Utilities
+
+p strutil A Java-plugin based package for string distance/similarity metrics and phonetic string encodings.

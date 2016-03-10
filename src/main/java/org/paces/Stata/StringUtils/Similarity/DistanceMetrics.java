@@ -14,64 +14,154 @@ import java.util.*;
  */
 public class DistanceMetrics {
 
-	private Cosine cos;
-	private Damerau damerau;
-	private Jaccard jaccard;
-	private JaroWinkler jw;
-	private Levenshtein lev;
-	private LongestCommonSubsequence longestSubsequence;
-	private MetricLCS metricLCS;
-	private NGram ngrams;
-	private NormalizedLevenshtein normalizedLev;
-	private QGram qgrams;
-	private SorensenDice dice;
-	private Locale loc;
-	private Integer fd;
-	private Meta m;
-	private Boolean cosineSim = false;
-	private Boolean cosineDist = false;
-	private Boolean damerauDist = false;
-	private Boolean jaccardSim = false;
-	private Boolean jaccardDist = false;
-	private Boolean jwSim = false;
-	private Boolean jwDist = false;
-	private Boolean levDist = false;
-	private Boolean longsubDist = false;
-	private Boolean metricDist = false;
-	private Boolean ngDist = false;
-	private Boolean normLevSim = false;
-	private Boolean normLevDist = false;
-	private Boolean qgDist = false;
-	private Boolean sorensenSim = false;
-	private Boolean sorensenDist = false;
+	/**
+	 * The object used to estimate the Cosine similarities/distances
+	 */
+	public Cosine cos;
 
+	/**
+	 * The object used to estimate the Damerau distances
+	 */
+	public Damerau damerau;
+
+	/**
+	 * The object used to estimate the Jaccard similarities/distances
+	 */
+	public Jaccard jaccard;
+
+	/**
+	 * The object used to estimate the Jaro-Winkler similarities/distances
+	 */
+	public JaroWinkler jw;
+
+	/**
+	 * The object used to estimate the Levenshtein Edic Distance
+	 */
+	public Levenshtein lev;
+
+	/**
+	 * The object used to estimate the Longest Common Subsequence distance
+	 */
+	public LongestCommonSubsequence longestSubsequence;
+
+	/**
+	 * The object used to estimate the Bakkelund distances
+	 */
+	public MetricLCS metricLCS;
+
+	/**
+	 * The object used to estimate the N-Gram distances
+	 */
+	public NGram ngrams;
+
+	/**
+	 * The object used to estimate the Normalized Levenshtein similarities/distances
+	 */
+	public NormalizedLevenshtein normalizedLev;
+
+	/**
+	 * The object used to estimate the Q-Gram distances
+	 */
+	public QGram qgrams;
+
+	/**
+	 * The object used to estimate the Sorensen Dice similarities/distances
+	 */
+	public SorensenDice dice;
+
+	/**
+	 * The language locality
+	 */
+	public Locale loc;
+
+	/**
+	 * Meta class object used to access the data from Stata
+	 */
+	private Meta m;
+
+	/**
+	 * Indicates whether or not the Cosine Similarity should be estimated
+	 */
+	private Boolean cosineSim = false;
+
+	/**
+	 * Indicates whether or not the Cosine Distance should be estimated
+	 */
+	private Boolean cosineDist = false;
+
+	/**
+	 * Indicates whether or not the Damerau Distance should be estimated
+	 */
+	private Boolean damerauDist = false;
+
+	/**
+	 * Indicates whether or not the Jaccard Similarity should be estimated
+	 */
+	private Boolean jaccardSim = false;
+
+	/**
+	 * Indicates whether or not the Jaccard Distance should be estimated
+	 */
+	private Boolean jaccardDist = false;
+
+	/**
+	 * Indicates whether or not the Jaro-Winkler Similarity should be estimated
+	 */
+	private Boolean jwSim = false;
+
+	/**
+	 * Indicates whether or not the Jaro-Winkler Distance should be estimated
+	 */
+	private Boolean jwDist = false;
+
+	/**
+	 * Indicates whether or not the Levenshtein Edit Distance should be estimated
+	 */
+	private Boolean levDist = false;
+
+	/**
+	 * Indicates whether or not the Longest Common Substring Distance should be estimated
+	 */
+	private Boolean longsubDist = false;
+
+	/**
+	 * Indicates whether or not the Bakkelund Distance should be estimated
+	 */
+	private Boolean metricDist = false;
+
+	/**
+	 * Indicates whether or not the N-Gram Distance should be estimated
+	 */
+	private Boolean ngDist = false;
+
+	/**
+	 * Indicates whether or not the Normalized Levenshtein Similarity should be estimated
+	 */
+	private Boolean normLevSim = false;
+
+	/**
+	 * Indicates whether or not the Normalized Levenshtein Distance should be estimated
+	 */
+	private Boolean normLevDist = false;
+
+	/**
+	 * Indicates whether or not the Q-Gram Distance should be estimated
+	 */
+	private Boolean qgDist = false;
+
+	/**
+	 * Indicates whether or not the Sorensen Dice Similarity should be estimated
+	 */
+	private Boolean sorensenSim = false;
+
+	/**
+	 * Indicates whether or not the Sorensen Dice Distance should be estimated
+	 */
+	private Boolean sorensenDist = false;
 
 	/**
 	 * Class constructor that automatically dispatches methods to return
 	 * distance metrics to Stata
-	 * args[0] Locale
-	 * args[1] Cosine Sim                   -   double
-	 * args[2] Cosine Dist                  -   double
-	 * args[3] Cosine Shingles              -   config
-	 * args[4] Damerau Distance             -   double
-	 * args[5] Jaccard Sim                  -   double
-	 * args[6] Jaccard Dist                 -   double
-	 * args[7] Jaccard Shingles             -   config
-	 * args[8] JaroWinkler Sim              -   double
-	 * args[9] JaroWinkler Dist             -   double
-	 * args[10] JaroWinkler Threshold       -   config
-	 * args[11] Levenshtein Dist            -   double
-	 * args[12] LongestSubSequence Dist     -   double
-	 * args[13] MetricLCS Dist              -   double
-	 * args[14] NGram Distance              -   double
-	 * args[15] NGram Size                  -   config
-	 * args[16] NormalLevenshtein Sim       -   double
-	 * args[17] NormalLevenshtein Dist      -   double
-	 * args[18] QGram Dist                  -   double
-	 * args[19] QGram Size                  -   config
-	 * args[20] SorensenDice Sim            -   double
-	 * args[21] SorensenDice Dist           -   double
-	 * args[22] SorensenDice Shingles       -   config
 	 * @param args Args passed from args parameter of the javacall command
 	 */
 	public DistanceMetrics(String[] args) {
@@ -122,7 +212,8 @@ public class DistanceMetrics {
 		if (!args[8].isEmpty()) {
 			Data.addVarDouble(args[8]);
 			newVarIndices.add(5, Data.getVarIndex(args[8]));
-			Data.setVarLabel(newVarIndices.get(5), "Jaro Winkler String Similarity");
+			if (!args[10].isEmpty() && Double.valueOf(args[10]) < 0) Data.setVarLabel(newVarIndices.get(5), "Jaro String Similarity");
+			else Data.setVarLabel(newVarIndices.get(5), "Jaro Winkler String Similarity");
 			this.jwSim = true;
 		} else {
 			newVarIndices.add(5, -99);
@@ -130,8 +221,8 @@ public class DistanceMetrics {
 		if (!args[9].isEmpty()) {
 			Data.addVarDouble(args[9]);
 			newVarIndices.add(6, Data.getVarIndex(args[9]));
-			Data.setVarLabel(newVarIndices.get(6), "Jaro Winkler String " +
-				"Distance");
+			if (!args[10].isEmpty() && Double.valueOf(args[10]) < 0) Data.setVarLabel(newVarIndices.get(6), "Jaro String Distance");
+			else Data.setVarLabel(newVarIndices.get(6), "Jaro Winkler String Distance");
 			this.jwDist = true;
 		} else {
 			newVarIndices.add(6, -99);
@@ -218,7 +309,10 @@ public class DistanceMetrics {
 
 	}
 
-
+	/**
+	 * Method used to initialize the objects used for estimating string distances
+	 * @param args The array of string arguments passed from the constructor.
+     */
 	private void createDistanceObjects(String[] args) {
 		if (!args[3].isEmpty()) this.cos = new Cosine(Integer.valueOf(args[3]));
 		else this.cos = new Cosine();
@@ -244,7 +338,10 @@ public class DistanceMetrics {
 		this.normalizedLev = new NormalizedLevenshtein();
 	}
 
-
+	/**
+	 * Method to place all of the booleans for distance metrics into a single container object
+	 * @return A List of booleans indicating which similarity/distance metrics will be estimated
+     */
 	public List<Boolean> getMetricList() {
 		List<Boolean> metrics = new ArrayList<>();
 		metrics.add(0, this.cosineSim);
@@ -276,9 +373,13 @@ public class DistanceMetrics {
 
 		// Loop over observations
 		for (Long i : this.m.getObsindex()) {
+
+
 			String from = Data.getStr(this.m.getVarindex().get(0), i).toLowerCase(this.loc);
+
 			String to = Data.getStr(this.m.getVarindex().get(1), i).toLowerCase(this.loc);
 
+			// If there is a valid variable index and the boolean is set to true
 			if (metrics.get(0) && varidx.get(0) != -99) {
 				Data.storeNum(varidx.get(0), i, this.cos.similarity(from, to));
 			}
@@ -343,9 +444,8 @@ public class DistanceMetrics {
 				Data.storeNum(varidx.get(15), i, this.dice.distance(from, to));
 			}
 
-		}
-	}
+		} // End of Loop over the string metric types
 
+	} // End of method declaration
 
-
-}
+} // End of Class declaration

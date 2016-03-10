@@ -1,0 +1,30 @@
+d 'STRUTIL': a suite of programs, mata classes/methods/functions, and Java
+d plugins to make it easier to make better looking graphs in Stata.
+d
+d strutil is a package that provides additional phonetic encoding algorithms
+d for strings and provides methods to estimate string distances and similarity
+d metrics.
+d
+d KW: Levenshtein
+d KW: Jaro
+d KW: Jaccard
+d KW: Sorensen
+d KW: Metaphone
+d KW: Double Metaphone
+d
+d Requires: Stata version 14.0
+d
+d Distribution-Date: 20160310
+d
+d Author: Billy Buchanan
+d		  Data Scientist
+d		  Office of Research, Evaluation, and Assessment
+d		  Minneapolis Public Schools
+d Support: email William [dot] Buchanan @t mpls [dot] k12 [dot] mn [dot] us
+d
+f strdist.ado
+f strdist.sthlp
+f strutils.jar
+f strutil.ado
+f strutil.sthlp
+

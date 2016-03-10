@@ -80,38 +80,109 @@ The example below shows how the strutil command can be used to generate several 
 ```
 
 ## String Distance
-This example shows some string distance implementations with the example dataset from the [ggeocode](https://github.com/wbuchanan/StataJSON) command.
+These examples are based on similar examples in the help file for the [jarowinkler](https://github.com/jamesfeigenbaum/jarowinkler-ado)
+program developed by James Feigenbaum and available from the SSC archives.
 
 ```
-clear 
-input str11 city1 str12 city2 
-"Robbinsdale" "robbinsdale"
-"Ridgeland" "RIDGELAND"
-"Seattle" "se@ttle"
-"Providence" "Prahvidence"
-"Cranston" "crnstin"
-"Attleboro" "Attleborough"
-"Warwick" "Warick"
-"Providence" "Prov"
-end
+. sysuse census, clear
+(1980 Census data by state)
 
-. strdist city1 city2, f j l
+. keep state state2
 
-. li
+. // Get all of the different distance and similarity metrics
+. strdist state state2, coss(cosine_sim) cosd(cosine_dist) damerau(dam)            ///
+> jaccards(jaccard_sim) jaccardd(jaccard_dist) lev(levenshtein)                    ///
+> longsubstr(longsubstring) met(metriclcs) ngramd(ngram_distance) ngramc(4)        ///
+> normlevs(normlev_similarity) normlevd(normlev_distance) qgramd(qgram_dist)       ///
+> qgramc(4) dices(sorensen_similarity) diced(sorensen_distance)                    ///
+> jarowinklers(jw_sim) jarowinklerd(jw_dist)
 
-     +-------------------------------------------------------------+
-     |       city1          city2   fuzzyd~e   jarowi~r   levens~e |
-     |-------------------------------------------------------------|
-  1. | Robbinsdale    robbinsdale         31          1          1 |
-  2. |   Ridgeland      RIDGELAND         25          1          8 |
-  3. |     Seattle        se@ttle          4         .9          2 |
-  4. |  Providence    Prahvidence          4        .92          2 |
-  5. |    Cranston        crnstin         11        .87          3 |
-     |-------------------------------------------------------------|
-  6. |   Attleboro   Attleborough         25        .95          3 |
-  7. |     Warwick         Warick         14        .97          1 |
-  8. |  Providence           Prov         10        .88          6 |
-     +-------------------------------------------------------------+
+. // Get the Jaro only metrics
+. strdist state state2, jarowinklers(jaro_sim) jarowinklerd(jaro_dist) jarowinklerc("-1")
+
+. // Describe the data set
+. desc
+
+Contains data from C:\Program Files (x86)\Stata14\ado\base/c/census.dta
+  obs:            50                          1980 Census data by state
+ vars:            20                          6 Apr 2014 15:43
+ size:         8,000
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+state           str14   %-14s                 State
+state2          str2    %-2s                  Two-letter state abbreviation
+cosine_sim      double  %10.0g                Cosine String Similarity
+cosine_dist     double  %10.0g                Cosine String Distance
+dam             double  %10.0g                Damerau String Distance
+jaccard_sim     double  %10.0g                Jaccard String Similarity
+jaccard_dist    double  %10.0g                Jaccard String Distance
+jw_sim          double  %10.0g                Jaro Winkler String Similarity
+jw_dist         double  %10.0g                Jaro Winkler String Distance
+levenshtein     double  %10.0g                Levenshtein String Distance
+longsubstring   double  %10.0g                Longest Common Substring Distance
+metriclcs       double  %10.0g                Bakkelund String Distance
+ngram_distance  double  %10.0g                N-Gram String Distance
+normlev_simil~y double  %10.0g                Normalized Levenshtein String Similarity
+normlev_dista~e double  %10.0g                Normalized Levenshtein String Distance
+qgram_dist      double  %10.0g                Q-Gram String Distance
+sorensen_simi~y double  %10.0g                Sorensen Dice String Similarity
+sorensen_dist~e double  %10.0g                Sorensen Dice String Distance
+jaro_sim        double  %10.0g                Jaro String Similarity
+jaro_dist       double  %10.0g                Jaro String Distance
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sorted by:
+     Note: Dataset has changed since last saved.
+
+. // Display some of the metrics along side their respective strings
+. li state state2 jw_dist jaro_dist jw_sim jaro_sim in 1/5, ab(40)
+
+     +---------------------------------------------------------------------+
+     | state        state2     jw_dist   jaro_dist      jw_sim    jaro_sim |
+     |---------------------------------------------------------------------|
+  1. | Alabama      AL       .19047624   .19047624   .80952376   .80952376 |
+  2. | Alaska       AK       .44444442   .39999998   .55555558   .60000002 |
+  3. | Arizona      AZ       .21428573   .21428573   .78571427   .78571427 |
+  4. | Arkansas     AR       .19999999   .19999999   .80000001   .80000001 |
+  5. | California   CA       .21333331   .21333331   .78666669   .78666669 |
+     +---------------------------------------------------------------------+
+
+. li state state2 dam jaccard* levenshtein in 1/5, ab(40)
+
+     +----------------------------------------------------------------------+
+     | state        state2   dam   jaccard_sim   jaccard_dist   levenshtein |
+     |----------------------------------------------------------------------|
+  1. | Alabama      AL         5             0              1             5 |
+  2. | Alaska       AK         4             0              1             4 |
+  3. | Arizona      AZ         5             0              1             5 |
+  4. | Arkansas     AR         6             0              1             6 |
+  5. | California   CA         8             0              1             8 |
+     +----------------------------------------------------------------------+
+
+. li state state2 longsubstring metriclcs norm*  in 1/5, ab(40)
+
+     +-----------------------------------------------------------------------------------------+
+     | state        state2   longsubstring   metriclcs   normlev_similarity   normlev_distance |
+     |-----------------------------------------------------------------------------------------|
+  1. | Alabama      AL                   5   .71428571            .28571429          .71428571 |
+  2. | Alaska       AK                   4   .66666667            .33333333          .66666667 |
+  3. | Arizona      AZ                   5   .71428571            .28571429          .71428571 |
+  4. | Arkansas     AR                   6         .75                  .25                .75 |
+  5. | California   CA                   8          .8                   .2                 .8 |
+     +-----------------------------------------------------------------------------------------+
+
+. li state state2 ngram* qgram* sorensen* in 1/5, ab(40)
+
+     +---------------------------------------------------------------------------------------------+
+     | state        state2   ngram_distance   qgram_dist   sorensen_similarity   sorensen_distance |
+     |---------------------------------------------------------------------------------------------|
+  1. | Alabama      AL             .2857143            4                     0                   1 |
+  2. | Alaska       AK            .16666667            3                     0                   1 |
+  3. | Arizona      AZ            .14285715            4                     0                   1 |
+  4. | Arkansas     AR                  .25            5                     0                   1 |
+  5. | California   CA                   .2            7                     0                   1 |
+     +---------------------------------------------------------------------------------------------+
 
 ```
 

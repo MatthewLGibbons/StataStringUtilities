@@ -358,4 +358,4 @@ public class StringEncoders {
 
 	} // End of Method declaration
 
-}
+} // End of Class declaration

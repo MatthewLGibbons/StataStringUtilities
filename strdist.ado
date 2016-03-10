@@ -55,11 +55,11 @@ prog def strdist
 	issues.
 	*/
 	syntax varlist(min=2 max=2 string) [if] [in] [, LOCale(string asis)      ///
-	COSSim(string asis) COSDist(string asis) COSConf(string asis)			 ///
+	COSSim(string asis) COSDist(string asis) COSConf(string asis) 			 ///
 	Damerau(string asis) JACCARDSim(string asis) JACCARDDist(string asis)	 ///
 	JACCARDConf(string asis) JAROWINKLERSim(string asis)					 ///
-	JAROWINKLERDist(string asis) JAROWINKLERConf(string asis)				 ///
-	LEVenshtein(string asis) LONGSUBSTRing(string asis)						 ///
+	JAROWINKLERDist(string asis) JAROWINKLERConf(string asis)	    		 ///
+	LEVenshtein(string asis) LONGSUBSequence(string asis)					 ///
 	METriclcs(string asis) NGRAMDist(string asis) NGRAMConf(string asis)	 ///
 	NORMLEVSim(string asis) NORMLEVDist(string asis) QGRAMDist(string asis)  ///
 	QGRAMConf(string asis) DICESim(string asis) DICEDist(string asis)		 ///
@@ -75,31 +75,34 @@ prog def strdist
 	optional parameter option above?  It's also helpful to annotate what you
 	are doing/why you are doing it with the logic so you can have a handy
 	reminder when/if working on the project in the future.
-	*/
-	if `"`locale'"' == "" loc locale `""""'
-	if `"`cossim'"' == "" loc cossim `""""'
-	if `"`cosdist'"' == "" loc cosdist  `""""'
-	if `"`cosconf'"' == "" loc cosconf `""""'
-	if `"`damerau'"' == "" loc damerau `""""'
-	if `"`jaccardsim'"' == "" loc jaccardsim `""""'
-	if `"`jaccarddist'"' == "" loc jaccarddist `""""'
-	if `"`jaccardconf'"' == "" loc jaccardconf `""""'
-	if `"`jarowinklersim'"' == "" loc jarowinklersim `""""'
-	if `"`jarowinklerdist'"' == "" loc jarowinklerdist `""""'
-	if `"`jarowinklerconf'"' == "" loc jarowinklerconf `""""'
-	if `"`levenshtein'"' == "" loc levenshtein `""""'
-	if `"`levenshtein'"' == "" loc levenshtein `""""'
-	if `"`longsubstring'"' == "" loc longsubstring  `""""'
-	if `"`metriclcs'"' == "" loc metriclcs `""""'
-	if `"`ngramdist'"' == "" loc ngramdist `""""'
-	if `"`ngramconf'"' == "" loc ngramconf `""""'
-	if `"`normlevsim'"' == "" loc normlevsim `""""'
-	if `"`normlevdist'"' == "" loc normlevdist `""""'
-	if `"`qgramdist'"' == "" loc qgramdist `""""'
-	if `"`qgramconf'"' == "" loc qgramconf `""""'
-	if `"`dicesim'"' == "" loc dicesim `""""'
-	if `"`dicedist'"' == "" loc dicedist `""""'
-	if `"`diceconf'"' == "" loc diceconf `""""'
+	*/                                                                                          // Order in which they
+	                                                                                            // appear in the args
+	// Testing optional arguments                                                               // argument to javacall
+	if `"`locale'"' == "" loc locale `""""'                                                     // 0
+	if `"`cossim'"' == "" loc cossim `""""'                                                     // 1
+	if `"`cosdist'"' == "" loc cosdist  `""""'                                                  // 2
+	if `"`cosconf'"' == "" loc cosconf `""""'                                                   // 3
+	if `"`damerau'"' == "" loc damerau `""""'                                                   // 4
+	if `"`jaccardsim'"' == "" loc jaccardsim `""""'                                             // 5
+	if `"`jaccarddist'"' == "" loc jaccarddist `""""'                                           // 6
+	if `"`jaccardconf'"' == "" loc jaccardconf `""""'                                           // 7
+	if `"`jarowinklersim'"' == "" loc jarowinklersim `""""'                                     // 8
+	if `"`jarowinklerdist'"' == "" loc jarowinklerdist `""""'                                   // 9
+	if `"`jarowinklerconf'"' == "" loc jarowinklerconf `""""'                                   // 10
+	else loc jarowinklerconf `"`jarowinklerconf'"'                                              // 10
+	if `"`levenshtein'"' == "" loc levenshtein `""""'                                           // 11
+	if `"`levenshtein'"' == "" loc levenshtein `""""'                                           // 12
+	if `"`longsubsequence'"' == "" loc longsubsequence  `""""'                                  // 13
+	if `"`metriclcs'"' == "" loc metriclcs `""""'                                               // 14
+	if `"`ngramdist'"' == "" loc ngramdist `""""'                                               // 15
+	if `"`ngramconf'"' == "" loc ngramconf `""""'                                               // 16
+	if `"`normlevsim'"' == "" loc normlevsim `""""'                                             // 17
+	if `"`normlevdist'"' == "" loc normlevdist `""""'                                           // 18
+	if `"`qgramdist'"' == "" loc qgramdist `""""'                                               // 19
+	if `"`qgramconf'"' == "" loc qgramconf `""""'                                               // 20
+	if `"`dicesim'"' == "" loc dicesim `""""'                                                   // 21
+	if `"`dicedist'"' == "" loc dicedist `""""'                                                 // 22
+	if `"`diceconf'"' == "" loc diceconf `""""'                                                 // 23
 
     /*
     Call the java plugin from Stata.
@@ -114,7 +117,7 @@ prog def strdist
     javacall org.paces.Stata.StringUtils.StringUtilities distance `varlist'  ///
     `if' `in', args(`locale' `cossim' `cosdist' `cosconf' `damerau'			 ///
     `jaccardsim' `jaccarddist' `jaccardconf' `jarowinklersim'				 ///
-    `jarowinklerdist' `jarowinklerconf' `levenshtein' `longsubstring'		 ///
+    `jarowinklerdist' `jarowinklerconf' `levenshtein' `longsubsequence'		 ///
     `metriclcs' `ngramdist' `ngramconf' `normlevsim' `normlevdist'			 ///
     `qgramdist' `qgramconf' `dicesim' `dicedist' `diceconf' )
 
