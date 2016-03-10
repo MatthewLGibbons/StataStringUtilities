@@ -1,6 +1,6 @@
 package org.paces.Stata.StringUtils;
 
-import com.stata.sfi.SFIToolkit;
+import com.stata.sfi.*;
 import org.paces.Stata.MetaData.Meta;
 import org.paces.Stata.StringUtils.PhoneticEncoding.StringEncoders;
 import org.paces.Stata.StringUtils.Similarity.DistanceMetrics;

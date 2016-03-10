@@ -54,8 +54,16 @@ prog def strdist
 	make sure there aren't cases where your options create incompatability
 	issues.
 	*/
-	syntax [varlist(min=2 max=2 string)] [if] [in] [, LOCale(string asis)    ///
-	Fuzzy Jaro Levenshtein ]
+	syntax varlist(min=2 max=2 string) [if] [in] [, LOCale(string asis)      ///
+	COSSim(string asis) COSDist(string asis) COSConf(string asis)			 ///
+	Damerau(string asis) JACCARDSim(string asis) JACCARDDist(string asis)	 ///
+	JACCARDConf(string asis) JAROWINKLERSim(string asis)					 ///
+	JAROWINKLERDist(string asis) JAROWINKLERConf(string asis)				 ///
+	LEVenshtein(string asis) LONGSUBSTRing(string asis)						 ///
+	METriclcs(string asis) NGRAMDist(string asis) NGRAMConf(string asis)	 ///
+	NORMLEVSim(string asis) NORMLEVDist(string asis) QGRAMDist(string asis)  ///
+	QGRAMConf(string asis) DICESim(string asis) DICEDist(string asis)		 ///
+	DICEConf(string asis) ]
 
 	// Deal with the if/in qualifiers after this you can use the reference
 	// if `touse' to handle any/all if/in arguments.
@@ -69,9 +77,29 @@ prog def strdist
 	reminder when/if working on the project in the future.
 	*/
 	if `"`locale'"' == "" loc locale `""""'
-	if `"`fuzzy'"' == "" loc fuzzy `""""'
-	if `"`jaro'"' == "" loc jaro `""""'
+	if `"`cossim'"' == "" loc cossim `""""'
+	if `"`cosdist'"' == "" loc cosdist  `""""'
+	if `"`cosconf'"' == "" loc cosconf `""""'
+	if `"`damerau'"' == "" loc damerau `""""'
+	if `"`jaccardsim'"' == "" loc jaccardsim `""""'
+	if `"`jaccarddist'"' == "" loc jaccarddist `""""'
+	if `"`jaccardconf'"' == "" loc jaccardconf `""""'
+	if `"`jarowinklersim'"' == "" loc jarowinklersim `""""'
+	if `"`jarowinklerdist'"' == "" loc jarowinklerdist `""""'
+	if `"`jarowinklerconf'"' == "" loc jarowinklerconf `""""'
 	if `"`levenshtein'"' == "" loc levenshtein `""""'
+	if `"`levenshtein'"' == "" loc levenshtein `""""'
+	if `"`longsubstring'"' == "" loc longsubstring  `""""'
+	if `"`metriclcs'"' == "" loc metriclcs `""""'
+	if `"`ngramdist'"' == "" loc ngramdist `""""'
+	if `"`ngramconf'"' == "" loc ngramconf `""""'
+	if `"`normlevsim'"' == "" loc normlevsim `""""'
+	if `"`normlevdist'"' == "" loc normlevdist `""""'
+	if `"`qgramdist'"' == "" loc qgramdist `""""'
+	if `"`qgramconf'"' == "" loc qgramconf `""""'
+	if `"`dicesim'"' == "" loc dicesim `""""'
+	if `"`dicedist'"' == "" loc dicedist `""""'
+	if `"`diceconf'"' == "" loc diceconf `""""'
 
     /*
     Call the java plugin from Stata.
@@ -84,9 +112,12 @@ prog def strdist
     independently of Stata.
     */
     javacall org.paces.Stata.StringUtils.StringUtilities distance `varlist'  ///
-    `if' `in', args(`locale' `fuzzy' `jaro' `levenshtein')
+    `if' `in', args(`locale' `cossim' `cosdist' `cosconf' `damerau'			 ///
+    `jaccardsim' `jaccarddist' `jaccardconf' `jarowinklersim'				 ///
+    `jarowinklerdist' `jarowinklerconf' `levenshtein' `longsubstring'		 ///
+    `metriclcs' `ngramdist' `ngramconf' `normlevsim' `normlevdist'			 ///
+    `qgramdist' `qgramconf' `dicesim' `dicedist' `diceconf' )
 
 // End of subroutine
 end
-
 
