@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stata String Utilities</title>
+    <description></description>
+    <link>https://wbuchanan.github.io/StataStringUtilities/</link>
+    <atom:link href="https://wbuchanan.github.io/StataStringUtilities/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 11 Mar 2016 04:37:52 -0600</pubDate>
+    <lastBuildDate>Fri, 11 Mar 2016 04:37:52 -0600</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Ready for Testing</title>
+        <description>&lt;p&gt;Package can be installed in Stata using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;net inst strutil, from(&quot;https://wbuchanan.github.io/StataStringUtilities/&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+        <pubDate>Thu, 10 Mar 2016 22:35:00 -0600</pubDate>
+        <link>https://wbuchanan.github.io/StataStringUtilities/post/2016/03/10/ready-for-testing.html</link>
+        <guid isPermaLink="true">https://wbuchanan.github.io/StataStringUtilities/post/2016/03/10/ready-for-testing.html</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
+    
+  </channel>
+</rss>

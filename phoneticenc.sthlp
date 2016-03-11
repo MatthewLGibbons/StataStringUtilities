@@ -1,17 +1,17 @@
 {smcl}
-{* *! version 0.0.1 DATEHERE}{...}
-{cmd:help strutil}
+{* *! version 0.0.1 11mar2016}{...}
+{cmd:help phoneticenc}
 {hline}
 
-{marker strutil}{p 2 2 2}{title:strutil}{p_end}
+{marker phoneticenc}{p 2 2 2}{title:phoneticenc}{p_end}
 
-{p 4 4 4}{hi:strutil {hline 2}} program that provides access to phonetic
+{p 4 4 4}{hi:phoneticenc {hline 2}} program that provides access to phonetic
 string encoding algorithms from the
 {browse "http://commons.apache.org/proper/commons-codec/":Apache Commons Codec Java Library}. {p_end}
 
 {marker syntax}{p 2 2 2}{title:Syntax}{p_end}
 
-{p 4 4 4}{cmd:strutil} {varlist} {ifin} [,
+{p 4 4 4}{cmd:phoneticenc} {varlist} {ifin} [,
 {cmd:caverphone1(}{it:varname}{opt )}
 {cmd:caverphone2(}{it:varname}{opt )}
 {cmdab:col:ogne(}{it:varname}{opt )}
@@ -25,7 +25,6 @@ string encoding algorithms from the
 {p 4 4 8} the command can accept one or more variables to encode.  When a
 varlist is passed, the strings are concatenated with a space between the
 variable values.{p_end}
-
 
 {marker opts}{p 2 2 2}{title:Options}{p_end}
 
@@ -78,7 +77,7 @@ additional information.{p_end}
 
 {p 4 4 4}Encoding car models/makes using all algorithms. {p_end}
 
-{p 8 8 12}{stata strutil make, caverphone1(cav1) caverphone2(cav2) col(kolner) dms(daitch) dblm(dblmeta) metap(metaphone) nys(nysiis) beiderm(bmencode) matchrating(mrating)}{p_end}
+{p 8 8 12}{stata phoneticenc make, caverphone1(cav1) caverphone2(cav2) col(kolner) dms(daitch) dblm(dblmeta) metap(metaphone) nys(nysiis) beiderm(bmencode) matchrating(mrating)}{p_end}
 
 {marker issues}{p 2 2 2}{title:Issues, Bugs, and Enhancement Requests}{p_end}
 

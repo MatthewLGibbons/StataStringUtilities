@@ -1,0 +1,4 @@
+org/paces/Stata/StringUtils/Similarity/Locality.class
+org/paces/Stata/StringUtils/Similarity/DistanceMetrics.class
+org/paces/Stata/StringUtils/PhoneticEncoding/StringEncoders.class
+org/paces/Stata/StringUtils/StringUtilities.class

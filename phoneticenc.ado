@@ -1,7 +1,7 @@
 /******************************************************************************
 *                                                                             *
 * DESCRIPTION:                                                                *
-*   Add information about what the strutil command does.                      *
+*   Add information about what the phoneticenc command does.                  *
 *   Ex.                                                                       *
 *   This program calls the strutil of the StringUtilities class.  This        *
 *   method does a thing that I find useful and believe will help others as    *
@@ -35,10 +35,10 @@
 ******************************************************************************/
 
 // Drop program from memory of previously loaded
-cap prog drop strutil
+cap prog drop phoneticenc
 
 // Define program
-prog def strutil
+prog def phoneticenc
 
 	// Set version for Stata interpretation
 	version 14.1

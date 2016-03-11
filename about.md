@@ -1,17 +1,17 @@
+---
+layout: page
+title: about
+permalink: /about/
+---
+
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 
 # Stata String Utilities
 This package contains two Stata programs that are wrappers for Java plugins: `phoneticenc` and `strdist`.  
 
-The `phoneticenc` command provides users with alternatives to the [soundex](http://www.stata.com/manuals14/fnstringfunctions.pdf) and [soundex_nara](http://www.stata.com/manuals14/fnstringfunctions.pdf) functions native to Stata 14.  
-These include the [Beider-Morse](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/bm/BeiderMorseEncoder.html), [Caverphone 1](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/Caverphone1.html), [Caverphone 2](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/Caverphone2.html), [Daitch-Mokotoff](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/DaitchMokotoffSoundex.html), [Double Metaphone](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/DoubleMetaphone.html), 
-[Kölner Phonetik](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/ColognePhonetic.html), [Match Rating Approach](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/MatchRatingApproachEncoder.html), [Metaphone](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/Metaphone.html), and [Nysiis](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/Nysiis.html) phonetic encoding algorithms.
+The `phoneticenc` command provides users with alternatives to the [soundex](http://www.stata.com/manuals14/fnstringfunctions.pdf) and [soundex_nara](http://www.stata.com/manuals14/fnstringfunctions.pdf) functions native to Stata 14.  These include the [Beider-Morse](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/bm/BeiderMorseEncoder.html), [Caverphone 1](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/Caverphone1.html), [Caverphone 2](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/Caverphone2.html), [Daitch-Mokotoff](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/DaitchMokotoffSoundex.html), [Double Metaphone](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/DoubleMetaphone.html), [Kölner Phonetik](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/ColognePhonetic.html), [Match Rating Approach](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/MatchRatingApproachEncoder.html), [Metaphone](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/Metaphone.html), and [Nysiis](https://commons.apache.org/proper/commons-codec/archives/1.10/apidocs/org/apache/commons/codec/language/Nysiis.html) phonetic encoding algorithms.
 
-
-The `strdist` command provides users with several different string similarity and distance metrics including: 
-Cosine similarity/distance, Damerau distance, Jaccard similarity/distance, Jaro-Winkler similarity/distance, 
-Jaro similarity/distance, Levenshtein edit distance, Longest Common Subsequence distance, Bakkelund Longest Common Subsequence distance, 
-N-Gram distance, Normalized Levenshtein similarity/distance, Q-Gram distance, and the Sorensen Dice similarity/distance _metrics_.    
+The `strdist` command provides users with several different string similarity and distance metrics including: Cosine similarity/distance, Damerau distance, Jaccard similarity/distance, Jaro-Winkler similarity/distance, Jaro similarity/distance, Levenshtein edit distance, Longest Common Subsequence distance, Bakkelund Longest Common Subsequence distance, N-Gram distance, Normalized Levenshtein similarity/distance, Q-Gram distance, and the Sorensen Dice similarity/distance _metrics_.    
 
 
 # Examples
