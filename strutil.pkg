@@ -24,8 +24,8 @@ d Support: email William [dot] Buchanan @t mpls [dot] k12 [dot] mn [dot] us
 d
 f strdist.ado
 f strdist.sthlp
-f strutils.jar
-f strutil.ado
-f strutil.sthlp
+f strutil.jar
+f phoneticenc.ado
+f phoneticenc.sthlp
 
 
