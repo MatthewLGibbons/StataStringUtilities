@@ -14,7 +14,7 @@
 {p 4 4 4}{cmd:strdist} {varlist} {ifin} [, {cmdab:loc:ale(}{it:string}{opt )}
 {cmdab:coss:im(}{it:varname}{opt )} {cmdab:cosd:ist(}{it:varname}{opt )}
 {cmdab:cosc:onf(}{it:integer}{opt )} {cmdab:d:amerau(}{it:varname}{opt )}
-{cmdab:jaccards:im(}{it:varname}{opt )} {cmdab:jaccard:ist(}{it:varname}{opt )}
+{cmdab:jaccards:im(}{it:varname}{opt )} {cmdab:jaccardd:ist(}{it:varname}{opt )}
 {cmdab:jaccardc:onf(}{it:integer}{opt )} {cmdab:jarowinklers:im(}{it:varname}{opt )}
 {cmdab:jarowinklerd:ist(}{it:varname}{opt )} {cmdab:jarowinklerc:onf(}{it:string}{opt )}
 {cmdab:lev:enshtein(}{it:varname}{opt )} {cmdab:longsubs:equence(}{it:varname}{opt )}
@@ -47,7 +47,7 @@ Damerau string distance will be stored.{p_end}
 {p 4 4 8}{cmdab:jaccards:im} is an option used to define the variable where the 
 Jaccard string similarity will be stored.{p_end}
 
-{p 4 4 8}{cmdab:jaccard:ist} is an option used to define the variable where the 
+{p 4 4 8}{cmdab:jaccardd:ist} is an option used to define the variable where the
 Jaccard string distance will be stored.{p_end}
 
 {p 4 4 8}{cmdab:jaccardc:onf} is an option used define the size of the k-shingles, 

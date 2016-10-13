@@ -35,10 +35,10 @@
 ******************************************************************************/
 
 // Drop program from memory of previously loaded
-cap prog drop strutil
+cap prog drop phoneticenc
 
 // Define program
-prog def strutil
+prog def phoneticenc
 
 	// Set version for Stata interpretation
 	version 14.1
