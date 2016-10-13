@@ -372,76 +372,76 @@ public class DistanceMetrics {
 	private void setDistances(List<Integer> varidx, List<Boolean> metrics) {
 
 		// Loop over observations
-		for (Long i : this.m.getObsindex()) {
+		for (Number i : this.m.getObsindex()) {
 
 
-			String from = Data.getStr(this.m.getVarindex().get(0), i).toLowerCase(this.loc);
+			String from = Data.getStr(this.m.getVarindex().get(0), i.longValue()).toLowerCase(this.loc);
 
-			String to = Data.getStr(this.m.getVarindex().get(1), i).toLowerCase(this.loc);
+			String to = Data.getStr(this.m.getVarindex().get(1), i.longValue()).toLowerCase(this.loc);
 
 			// If there is a valid variable index and the boolean is set to true
 			if (metrics.get(0) && varidx.get(0) != -99) {
-				Data.storeNum(varidx.get(0), i, this.cos.similarity(from, to));
+				Data.storeNum(varidx.get(0), i.longValue(), this.cos.similarity(from, to));
 			}
 
 			if (metrics.get(1) && varidx.get(0) != -99) {
-				Data.storeNum(varidx.get(1), i, this.cos.distance(from, to));
+				Data.storeNum(varidx.get(1), i.longValue(), this.cos.distance(from, to));
 			}
 
 			if (metrics.get(2) && varidx.get(2) != -99) {
-				Data.storeNum(varidx.get(2), i, this.damerau.distance(from, to));
+				Data.storeNum(varidx.get(2), i.longValue(), this.damerau.distance(from, to));
 			}
 
 			if (metrics.get(3) && varidx.get(3) != -99) {
-				Data.storeNum(varidx.get(3), i, this.jaccard.similarity(from, to));
+				Data.storeNum(varidx.get(3), i.longValue(), this.jaccard.similarity(from, to));
 			}
 
 			if (metrics.get(4) && varidx.get(4) != -99) {
-				Data.storeNum(varidx.get(4), i, this.jaccard.distance(from, to));
+				Data.storeNum(varidx.get(4), i.longValue(), this.jaccard.distance(from, to));
 			}
 
 			if (metrics.get(5) && varidx.get(5) != -99) {
-				Data.storeNum(varidx.get(5), i, this.jw.similarity(from, to));
+				Data.storeNum(varidx.get(5), i.longValue(), this.jw.similarity(from, to));
 			}
 
 			if (metrics.get(6) && varidx.get(6) != -99) {
-				Data.storeNum(varidx.get(6), i, this.jw.distance(from, to));
+				Data.storeNum(varidx.get(6), i.longValue(), this.jw.distance(from, to));
 			}
 
 			if (metrics.get(7) && varidx.get(7) != -99) {
-				Data.storeNum(varidx.get(7), i, this.lev.distance(from, to));
+				Data.storeNum(varidx.get(7), i.longValue(), this.lev.distance(from, to));
 			}
 
 			if (metrics.get(8) && varidx.get(8) != -99) {
-				Data.storeNum(varidx.get(8), i, this.longestSubsequence.distance(from, to));
+				Data.storeNum(varidx.get(8), i.longValue(), this.longestSubsequence.distance(from, to));
 			}
 
 			if (metrics.get(9) && varidx.get(9) != -99) {
-				Data.storeNum(varidx.get(9), i, this.metricLCS.distance(from, to));
+				Data.storeNum(varidx.get(9), i.longValue(), this.metricLCS.distance(from, to));
 			}
 
 			if (metrics.get(10) && varidx.get(10) != -99) {
-				Data.storeNum(varidx.get(10), i, this.ngrams.distance(from, to));
+				Data.storeNum(varidx.get(10), i.longValue(), this.ngrams.distance(from, to));
 			}
 
 			if (metrics.get(11) && varidx.get(11) != -99) {
-				Data.storeNum(varidx.get(11), i, this.normalizedLev.similarity(from, to));
+				Data.storeNum(varidx.get(11), i.longValue(), this.normalizedLev.similarity(from, to));
 			}
 
 			if (metrics.get(12) && varidx.get(12) != -99) {
-				Data.storeNum(varidx.get(12), i, this.normalizedLev.distance(from, to));
+				Data.storeNum(varidx.get(12), i.longValue(), this.normalizedLev.distance(from, to));
 			}
 
 			if (metrics.get(13) && varidx.get(13) != -99) {
-				Data.storeNum(varidx.get(13), i, this.qgrams.distance(from, to));
+				Data.storeNum(varidx.get(13), i.longValue(), this.qgrams.distance(from, to));
 			}
 
 			if (metrics.get(14) && varidx.get(14) != -99) {
-				Data.storeNum(varidx.get(14), i, this.dice.similarity(from, to));
+				Data.storeNum(varidx.get(14), i.longValue(), this.dice.similarity(from, to));
 			}
 
 			if (metrics.get(15) && varidx.get(15) != -99) {
-				Data.storeNum(varidx.get(15), i, this.dice.distance(from, to));
+				Data.storeNum(varidx.get(15), i.longValue(), this.dice.distance(from, to));
 			}
 
 		} // End of Loop over the string metric types

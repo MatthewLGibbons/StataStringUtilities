@@ -252,7 +252,7 @@
 			<version>0.0.2-SNAPSHOT</version>
 			<type>jar</type>
 			<scope>compile</scope>
-			<optional>true</optional>
+			<optional>false</optional>
 		</dependency>
 	</dependencies>
 

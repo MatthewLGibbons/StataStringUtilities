@@ -327,7 +327,7 @@ public class StringEncoders {
 			Integer newvaridx = Data.getVarIndex(varname);
 
 			// Loop over observations
-			for (Long i : this.metaData.getObsindex()) {
+			for (Number i : this.metaData.getObsindex()) {
 
 				// Build a string with values from varlist
 				StringJoiner s = new StringJoiner(" ");
@@ -336,7 +336,7 @@ public class StringEncoders {
 				for (Integer j : this.metaData.getVarindex()) {
 
 					// Adds string data to the string
-					s.add(Data.getStr(j, i));
+					s.add(Data.getStr(j, i.longValue()));
 
 				} // Ends loop over the string
 
@@ -350,7 +350,8 @@ public class StringEncoders {
 				Method getString = cls.getDeclaredMethod("encode", Class.forName("java.lang.String"));
 
 				// Encodes the string value and returns the caverphone 1 string
-				Data.storeStr(newvaridx, i, (String) getString.invoke(enc, s.toString()));
+				Data.storeStr(newvaridx, i.longValue(),
+					(String) getString.invoke(enc, s.toString()));
 
 			} // End Loop over observations
 

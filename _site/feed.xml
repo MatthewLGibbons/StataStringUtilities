@@ -5,9 +5,26 @@
     <description></description>
     <link>https://wbuchanan.github.io/StataStringUtilities/</link>
     <atom:link href="https://wbuchanan.github.io/StataStringUtilities/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 11 Mar 2016 04:37:52 -0600</pubDate>
-    <lastBuildDate>Fri, 11 Mar 2016 04:37:52 -0600</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <pubDate>Thu, 13 Oct 2016 05:48:21 -0400</pubDate>
+    <lastBuildDate>Thu, 13 Oct 2016 05:48:21 -0400</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Bug Fixes</title>
+        <description>&lt;p&gt;Recently found out the package was not correctly installing.  Still need to try installation on other machines, but recompiled the binary against the updated Stata Java Utilities library.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;net inst strutil, from(&quot;http://wbuchanan.github.io/StataStringUtilities/&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+        <pubDate>Thu, 13 Oct 2016 01:45:00 -0400</pubDate>
+        <link>https://wbuchanan.github.io/StataStringUtilities/post/2016/10/13/Fixes.html</link>
+        <guid isPermaLink="true">https://wbuchanan.github.io/StataStringUtilities/post/2016/10/13/Fixes.html</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
     
       <item>
         <title>Ready for Testing</title>
@@ -17,7 +34,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 </description>
-        <pubDate>Thu, 10 Mar 2016 22:35:00 -0600</pubDate>
+        <pubDate>Thu, 10 Mar 2016 23:35:00 -0500</pubDate>
         <link>https://wbuchanan.github.io/StataStringUtilities/post/2016/03/10/ready-for-testing.html</link>
         <guid isPermaLink="true">https://wbuchanan.github.io/StataStringUtilities/post/2016/03/10/ready-for-testing.html</guid>
         

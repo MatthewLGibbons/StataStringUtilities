@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Bug Fixes"
+date:   2016-10-13 05:45:00
+categories: post
+---
+
+Recently found out the package was not correctly installing.  Still need to try installation on other machines, but recompiled the binary against the updated Stata Java Utilities library.
+
+```
+net inst strutil, from("http://wbuchanan.github.io/StataStringUtilities/")
+```
+
+

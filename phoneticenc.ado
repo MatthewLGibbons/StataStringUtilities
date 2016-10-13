@@ -1,7 +1,7 @@
 /******************************************************************************
 *                                                                             *
 * DESCRIPTION:                                                                *
-*   Add information about what the phoneticenc command does.                  *
+*   Add information about what the strutil command does.                      *
 *   Ex.                                                                       *
 *   This program calls the strutil of the StringUtilities class.  This        *
 *   method does a thing that I find useful and believe will help others as    *
