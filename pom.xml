@@ -5,7 +5,7 @@
 	<!-- This contains the overall package metadata -->
 	<groupId>org.paces-consulting</groupId>
 	<artifactId>stata-string-utils</artifactId>
-	<version>0.0.0-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>org.paces-consulting:stata-string-utils</name>
 	<description>Package for string manipulation in Stata</description>
@@ -236,7 +236,7 @@
 			<version>1.10</version>
 			<type>jar</type>
 			<scope>compile</scope>
-			<optional>true</optional>
+			<optional>false</optional>
 		</dependency>
 		<dependency>
 			<groupId>info.debatty</groupId>
@@ -249,7 +249,7 @@
 		<dependency>
 			<groupId>org.paces-consulting</groupId>
 			<artifactId>stata-java</artifactId>
-			<version>0.0.2-SNAPSHOT</version>
+			<version>0.0.3-SNAPSHOT</version>
 			<type>jar</type>
 			<scope>compile</scope>
 			<optional>false</optional>
