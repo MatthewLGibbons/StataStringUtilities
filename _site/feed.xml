@@ -5,21 +5,22 @@
     <description></description>
     <link>https://wbuchanan.github.io/StataStringUtilities/</link>
     <atom:link href="https://wbuchanan.github.io/StataStringUtilities/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 13 Oct 2016 10:31:08 -0400</pubDate>
-    <lastBuildDate>Thu, 13 Oct 2016 10:31:08 -0400</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
+    <pubDate>Mon, 17 Oct 2016 08:17:55 -0400</pubDate>
+    <lastBuildDate>Mon, 17 Oct 2016 08:17:55 -0400</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Bug Fixes</title>
-        <description>&lt;p&gt;Recently found out the package was not correctly installing.  Still need to try installation on other machines, but recompiled the binary against the updated Stata Java Utilities library.&lt;/p&gt;
+        <description>&lt;p&gt;Recently found out the package was not correctly installing.  Still need to try installation on other machines, but recompiled the binary against the updated Stata Java Utilities library.  This also affected a different OSX machine I have.  I’ve recompiled on that machine and it seems to have fixed the issue that caused the same problem to be reproduced on the other OSX machine.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;net inst strutil, from(&quot;http://wbuchanan.github.io/StataStringUtilities/&quot;)
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;net inst strutil, from(&quot;http://wbuchanan.github.io/StataStringUtilities/&quot;)
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 </description>
-        <pubDate>Thu, 13 Oct 2016 01:45:00 -0400</pubDate>
-        <link>https://wbuchanan.github.io/StataStringUtilities/post/2016/10/13/Fixes.html</link>
-        <guid isPermaLink="true">https://wbuchanan.github.io/StataStringUtilities/post/2016/10/13/Fixes.html</guid>
+        <pubDate>Mon, 17 Oct 2016 04:16:00 -0400</pubDate>
+        <link>https://wbuchanan.github.io/StataStringUtilities/post/2016/10/17/Fixes.html</link>
+        <guid isPermaLink="true">https://wbuchanan.github.io/StataStringUtilities/post/2016/10/17/Fixes.html</guid>
         
         
         <category>post</category>
@@ -30,8 +31,9 @@
         <title>Ready for Testing</title>
         <description>&lt;p&gt;Package can be installed in Stata using:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;net inst strutil, from(&quot;https://wbuchanan.github.io/StataStringUtilities/&quot;)
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;net inst strutil, from(&quot;https://wbuchanan.github.io/StataStringUtilities/&quot;)
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 </description>
         <pubDate>Thu, 10 Mar 2016 23:35:00 -0500</pubDate>

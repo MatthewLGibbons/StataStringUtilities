@@ -228,7 +228,7 @@
 			<version>14</version>
 			<type>jar</type>
 			<scope>provided</scope>
-			<optional>true</optional>
+			<optional>false</optional>
 		</dependency>
 		<dependency>
 			<groupId>commons-codec</groupId>

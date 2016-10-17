@@ -24,50 +24,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5e537a-034e-4ea7-8ba8-2f3e36782453" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strutil.jar" afterPath="$PROJECT_DIR$/strutil.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stata-string-utils-jar-with-dependencies.jar" afterPath="$PROJECT_DIR$/target/stata-string-utils-jar-with-dependencies.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stata-string-utils-javadoc.jar" afterPath="$PROJECT_DIR$/target/stata-string-utils-javadoc.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stata-string-utils-sources.jar" afterPath="$PROJECT_DIR$/target/stata-string-utils-sources.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stata-string-utils.jar" afterPath="$PROJECT_DIR$/target/stata-string-utils.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/Gemfile.lock" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_site/post/2016/10/13/Fixes.html" afterPath="$PROJECT_DIR$/_site/post/2016/10/17/Fixes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/strutil.jar" afterPath="$PROJECT_DIR$/_site/strutil.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/stata-string-utils-jar-with-dependencies.jar" afterPath="$PROJECT_DIR$/_site/target/stata-string-utils-jar-with-dependencies.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/stata-string-utils-javadoc.jar" afterPath="$PROJECT_DIR$/_site/target/stata-string-utils-javadoc.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/stata-string-utils-sources.jar" afterPath="$PROJECT_DIR$/_site/target/stata-string-utils-sources.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/stata-string-utils.jar" afterPath="$PROJECT_DIR$/_site/target/stata-string-utils.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stata-string-utils.iml" afterPath="$PROJECT_DIR$/stata-string-utils.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-10-13-Fixes.markdown" afterPath="$PROJECT_DIR$/_posts/2016-10-13-Fixes.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/Gemfile" afterPath="$PROJECT_DIR$/_site/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="$PROJECT_DIR$/_site/about/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/css/main.css" afterPath="$PROJECT_DIR$/_site/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/pom.xml" afterPath="$PROJECT_DIR$/_site/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/post/2016/03/10/ready-for-testing.html" afterPath="$PROJECT_DIR$/_site/post/2016/03/10/ready-for-testing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/stata-string-utils.iml" afterPath="$PROJECT_DIR$/_site/stata-string-utils.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/strutil.pkg" afterPath="$PROJECT_DIR$/_site/strutil.pkg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/allclasses-frame.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/allclasses-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/allclasses-noframe.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/allclasses-noframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/constant-values.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/constant-values.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/deprecated-list.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/deprecated-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/help-doc.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/help-doc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/index-all.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/index-all.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/index.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/StringEncoders.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/StringEncoders.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/class-use/StringEncoders.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/class-use/StringEncoders.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-frame.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-summary.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-tree.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-use.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-use.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/DistanceMetrics.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/DistanceMetrics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/Locality.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/Locality.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/class-use/DistanceMetrics.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/class-use/DistanceMetrics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/class-use/Locality.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/class-use/Locality.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-frame.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-summary.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-tree.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-use.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-use.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/StringUtilities.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/StringUtilities.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/class-use/StringUtilities.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/class-use/StringUtilities.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/package-frame.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/package-summary.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/package-tree.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/package-use.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/org/paces/Stata/StringUtils/package-use.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/overview-frame.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/overview-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/overview-summary.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/overview-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/apidocs/overview-tree.html" afterPath="$PROJECT_DIR$/_site/target/apidocs/overview-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/_site/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/_site/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strutil.pkg" afterPath="$PROJECT_DIR$/strutil.pkg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/constant-values.html" afterPath="$PROJECT_DIR$/target/apidocs/constant-values.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" afterPath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/help-doc.html" afterPath="$PROJECT_DIR$/target/apidocs/help-doc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/index-all.html" afterPath="$PROJECT_DIR$/target/apidocs/index-all.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/index.html" afterPath="$PROJECT_DIR$/target/apidocs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/StringEncoders.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/StringEncoders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/class-use/StringEncoders.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/class-use/StringEncoders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-summary.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-tree.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-use.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/PhoneticEncoding/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/DistanceMetrics.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/DistanceMetrics.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/Locality.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/Locality.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/class-use/DistanceMetrics.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/class-use/DistanceMetrics.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/class-use/Locality.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/class-use/Locality.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-summary.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-tree.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-use.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/Similarity/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/StringUtilities.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/StringUtilities.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/class-use/StringUtilities.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/class-use/StringUtilities.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/package-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/package-summary.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/package-tree.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/package-use.html" afterPath="$PROJECT_DIR$/target/apidocs/org/paces/Stata/StringUtils/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/overview-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/overview-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/overview-summary.html" afterPath="$PROJECT_DIR$/target/apidocs/overview-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/overview-tree.html" afterPath="$PROJECT_DIR$/target/apidocs/overview-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="stata-string-utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,11 +110,11 @@
     <favorites_list name="CodeIris Favorites" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
+            <state relative-caret-position="3450">
               <caret line="230" column="27" selection-start-line="230" selection-start-column="27" selection-end-line="230" selection-end-column="27" />
               <folding />
             </state>
@@ -124,8 +134,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1314">
-              <caret line="786" column="0" selection-start-line="786" selection-start-column="0" selection-end-line="786" selection-end-column="0" />
+            <state relative-caret-position="11805">
+              <caret line="838" column="0" selection-start-line="838" selection-start-column="0" selection-end-line="838" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,8 +144,28 @@
       <file leaf-file-name="strutil.pkg" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/strutil.pkg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="132">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016-10-13-Fixes.markdown" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-10-13-Fixes.markdown">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="381" selection-start-line="7" selection-start-column="381" selection-end-line="7" selection-end-column="381" />
               <folding />
             </state>
           </provider>
@@ -144,7 +174,7 @@
       <file leaf-file-name="StringEncoders.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StringUtils/PhoneticEncoding/StringEncoders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="405">
               <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -193,6 +223,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/_posts/2016-10-13-Fixes.markdown" />
         <option value="$PROJECT_DIR$/strutil.pkg" />
       </list>
     </option>
@@ -323,9 +355,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stata-string-utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StataStringUtilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -354,7 +401,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="NBKnowledgePane" />
     </panes>
   </component>
@@ -574,11 +620,14 @@
       <updated>1456737484235</updated>
       <workItem from="1457621850471" duration="8485000" />
       <workItem from="1476629445169" duration="1753000" />
+      <workItem from="1476702743618" duration="2950000" />
+      <workItem from="1476706313205" duration="3000" />
+      <workItem from="1476706469634" duration="178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10687000" />
+    <option name="totallyTimeSpent" value="14292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="47" width="1648" height="712" extended-state="0" />
@@ -590,10 +639,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33548388" sideWeight="0.50260997" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30136988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33548388" sideWeight="0.49739" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4516129" sideWeight="0.49739" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16500622" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16500622" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -658,6 +707,130 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3450">
+          <caret line="230" column="27" selection-start-line="230" selection-start-column="27" selection-end-line="230" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="161" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="161" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11805">
+          <caret line="787" column="0" selection-start-line="787" selection-start-column="0" selection-end-line="787" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strutil.pkg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StringUtils/PhoneticEncoding/StringEncoders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3450">
+          <caret line="230" column="27" selection-start-line="230" selection-start-column="27" selection-end-line="230" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="161" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="161" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11805">
+          <caret line="787" column="0" selection-start-line="787" selection-start-column="0" selection-end-line="787" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strutil.pkg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StringUtils/PhoneticEncoding/StringEncoders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="161" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="161" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11790">
+          <caret line="786" column="0" selection-start-line="786" selection-start-column="0" selection-end-line="786" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="230" column="27" selection-start-line="230" selection-start-column="27" selection-end-line="230" selection-end-column="27" />
           <folding />
@@ -686,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,8 +872,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1314">
-          <caret line="786" column="0" selection-start-line="786" selection-start-column="0" selection-end-line="786" selection-end-column="0" />
+        <state relative-caret-position="11805">
+          <caret line="838" column="0" selection-start-line="838" selection-start-column="0" selection-end-line="838" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -749,19 +921,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
+        <state relative-caret-position="3450">
           <caret line="230" column="27" selection-start-line="230" selection-start-column="27" selection-end-line="230" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StringUtils/PhoneticEncoding/StringEncoders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -780,10 +942,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/paces/Stata/StringUtils/PhoneticEncoding/StringEncoders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-10-13-Fixes.markdown">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="381" selection-start-line="7" selection-start-column="381" selection-end-line="7" selection-end-column="381" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/strutil.pkg">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="132">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding />
         </state>
       </provider>
