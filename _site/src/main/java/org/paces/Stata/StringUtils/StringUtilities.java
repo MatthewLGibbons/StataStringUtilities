@@ -23,7 +23,7 @@ public class StringUtilities {
 	 * that non-zero returns in other compiled languages often indicate errors)
 	 */
 	public static int strutil(String[] args) {
-		StringEncoders sencode = new StringEncoders(new Meta(args));
+		StringEncoders sencode = new StringEncoders(new Meta());
 		try {
 			if (!args[0].isEmpty()) sencode.caverphone1(args[0]);
 			if (!args[1].isEmpty()) sencode.caverphone2(args[1]);

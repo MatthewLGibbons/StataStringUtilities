@@ -90,7 +90,7 @@ prog def phoneticenc
     into the same class to test and debug the plugin from the command line
     independently of Stata.
     */
-    javacall org.paces.Stata.StringUtils.StringUtilities strutil `if' `in',  ///
+    javacall org.paces.Stata.StringUtils.StringUtilities strutil `varlist' `if' `in',  ///
     args(`caverphone1' `caverphone2' `cologne' `dmsoundex' `dblmetaphone'    ///
     `metaphone' `nysiis' `beidermorse' `matchrating')
 

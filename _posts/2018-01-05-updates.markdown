@@ -1,0 +1,3 @@
+# Compatibility Fix
+As part of a slower moving, but larger refactoring, I am making all my Java backed programs that rely on [Stata Java Utilities](https://github.com/wbuchanan/StataJavaUtilities) rely on this library to be installed locally.  
+This will help prevent Method Not Found exceptions when there are two different versions of the library installed on the same machine from different versions of some of my software.

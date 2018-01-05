@@ -2,20 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stata String Utilities</title>
-    <description></description>
+    <description>Stata plugins to Java libraries that provide utilities for analyzing, parsing, and/or working with String data more generally.</description>
     <link>https://wbuchanan.github.io/StataStringUtilities/</link>
     <atom:link href="https://wbuchanan.github.io/StataStringUtilities/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 17 Oct 2016 08:17:55 -0400</pubDate>
-    <lastBuildDate>Mon, 17 Oct 2016 08:17:55 -0400</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <pubDate>Fri, 05 Jan 2018 07:08:53 -0500</pubDate>
+    <lastBuildDate>Fri, 05 Jan 2018 07:08:53 -0500</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Updates</title>
+        <description>&lt;h1 id=&quot;compatibility-fix&quot;&gt;Compatibility Fix&lt;/h1&gt;
+&lt;p&gt;As part of a slower moving, but larger refactoring, I am making all my Java backed programs that rely on &lt;a href=&quot;https://github.com/wbuchanan/StataJavaUtilities&quot;&gt;Stata Java Utilities&lt;/a&gt; rely on this library to be installed locally.&lt;br /&gt;
+This will help prevent Method Not Found exceptions when there are two different versions of the library installed on the same machine from different versions of some of my software.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 05 Jan 2018 00:00:00 -0500</pubDate>
+        <link>https://wbuchanan.github.io/StataStringUtilities/2018/01/05/updates.html</link>
+        <guid isPermaLink="true">https://wbuchanan.github.io/StataStringUtilities/2018/01/05/updates.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Bug Fixes</title>
         <description>&lt;p&gt;Recently found out the package was not correctly installing.  Still need to try installation on other machines, but recompiled the binary against the updated Stata Java Utilities library.  This also affected a different OSX machine I have.  I’ve recompiled on that machine and it seems to have fixed the issue that caused the same problem to be reproduced on the other OSX machine.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;net inst strutil, from(&quot;http://wbuchanan.github.io/StataStringUtilities/&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;net inst strutil, from(&quot;http://wbuchanan.github.io/StataStringUtilities/&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Mon, 17 Oct 2016 04:16:00 -0400</pubDate>
@@ -31,14 +43,13 @@
         <title>Ready for Testing</title>
         <description>&lt;p&gt;Package can be installed in Stata using:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;net inst strutil, from(&quot;https://wbuchanan.github.io/StataStringUtilities/&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;net inst strutil, from(&quot;https://wbuchanan.github.io/StataStringUtilities/&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Thu, 10 Mar 2016 23:35:00 -0500</pubDate>
-        <link>https://wbuchanan.github.io/StataStringUtilities/post/2016/03/10/ready-for-testing.html</link>
-        <guid isPermaLink="true">https://wbuchanan.github.io/StataStringUtilities/post/2016/03/10/ready-for-testing.html</guid>
+        <link>https://wbuchanan.github.io/StataStringUtilities/post/2016/03/11/ready-for-testing.html</link>
+        <guid isPermaLink="true">https://wbuchanan.github.io/StataStringUtilities/post/2016/03/11/ready-for-testing.html</guid>
         
         
         <category>post</category>

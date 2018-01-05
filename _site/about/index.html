@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>about</title>
-    <meta name="description" content="">
+    <meta name="description" content="Stata plugins to Java libraries that provide utilities for analyzing, parsing, and/or working with String data more generally.">
 
     <link rel="stylesheet" href="/StataStringUtilities/css/main.css">
     <link rel="canonical" href="https://wbuchanan.github.io/StataStringUtilities/about/">
@@ -35,6 +35,8 @@
         
           
           <a class="page-link" href="/StataStringUtilities/about/">about</a>
+          
+        
           
         
           
@@ -74,7 +76,7 @@
 <h2 id="phonetic-string-encoding">Phonetic String Encoding</h2>
 <p>The example below shows how the strutil command can be used to generate several different phonetic encodings of a given string.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>. sysuse auto.dta, clear
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>. sysuse auto.dta, clear
 . phoneticenc make, caverphone1(cav1) caverphone2(cav2) col(kolner) dms(daitch) dblm(dblmeta) metap(metaphone) nys(nysiis) beiderm(bmencode) matchrating(mrating)
 . li make cav1 cav2 kolner daitch in 1/5
 
@@ -142,13 +144,12 @@
      | bDkiliktranulnulnulnulnulnulnulnulnulnulnulnul|bDkiliktronulnulnulnulnulnulnulnulnulnulnulnul|bDkilitstranulnulnulnulnulnulnulnulnulnulnulnul|bDkilitstronulnulnulnulnulnulnulnulnulnulnulnul|bDkliktranulnu.. |
      +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="string-distance">String Distance</h2>
 <p>These examples are based on similar examples in the help file for the <a href="https://github.com/jamesfeigenbaum/jarowinkler-ado">jarowinkler</a> program developed by James Feigenbaum and available from the SSC archives.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>. sysuse census, clear
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>. sysuse census, clear
 (1980 Census data by state)
 
 . keep state state2
@@ -248,8 +249,7 @@ Sorted by:
   5. | California   CA                   .2            7                     0                   1 |
      +---------------------------------------------------------------------------------------------+
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h1 id="additional-information">Additional Information</h1>
 <p><strong>Requires JRE 1.8 or later</strong></p>
@@ -309,7 +309,7 @@ Sorted by:
       </div>
 
       <div class="footer-col  footer-col-3">
-        <p class="text"></p>
+        <p class="text">Stata plugins to Java libraries that provide utilities for analyzing, parsing, and/or working with String data more generally.</p>
       </div>
     </div>
 
