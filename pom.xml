@@ -251,7 +251,7 @@
 			<artifactId>stata-java</artifactId>
 			<version>0.0.3-SNAPSHOT</version>
 			<type>jar</type>
-			<scope>compile</scope>
+			<scope>provided</scope>
 			<optional>false</optional>
 		</dependency>
 	</dependencies>
